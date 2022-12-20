@@ -1,0 +1,125 @@
+﻿@page "/register"
+@using Crm_WASM.Shared
+@inject HttpClient Http
+@inject NavigationManager NavigationManager
+
+<div class="window__container auth__container">
+    <div class="window__upper auth__upper">
+        <h2 class="auth__title">
+            Регистрация
+        </h2>
+    </div>
+    <div class="window__lower auth__lower">
+        <p class="auth__lower-par">
+            Введите данные для доступа к системе.
+        </p>
+        <input type="text" class="auth__input" placeholder="Логин" @bind="newUserLogin"/>
+        <input type="text" class="auth__input" placeholder="Пароль" @bind="newUserPassword" />
+        <input type="text" class="auth__input" placeholder="Имя" @bind="newUserName" />
+        <input type="text" class="auth__input" placeholder="Фамилия" @bind="newUserSurName" />
+        <input type="text" class="auth__input" placeholder="Отчество" @bind="newUserLastName" />
+        <input type="text" class="auth__input" placeholder="E-Mail" @bind="newUserEmail" />
+        <input type="text" class="auth__input" placeholder="Номер телефона"  @bind="newUserPhone"/>
+        <button class="auth__login btn" @onclick="addUser">Зарегистрироваться</button>
+        <p class="auth__register-par">Уже есть аккаунт?<a class="auth__press-here" href="login">Войти</a></p>
+    </div>
+</div>
+<table class="table table-stripped">
+    <thead class="table-dark">
+        <tr>
+            <th scope="col">
+                id
+            </th>
+            <th scope="col">
+                Полное имя
+            </th>
+            <th scope="col">
+                Email
+            </th>
+            <th scope="col">
+                Номер телефона
+            </th>
+            <th scope="col">
+            </th>
+        </tr>
+    </thead>
+    @foreach (var item in customers)
+    {
+        <tbody>
+            <tr>
+                <td>
+                    @item.CustomerId
+                </td>
+                <td>
+                    @item.Name @item.SurName @item.LastName
+                </td>
+                <td>
+                    @item.Email
+                </td>
+                <td>
+                    @item.PhoneNumber
+                </td>
+                <td>
+                    <a href="/customer-orders/@item.CustomerId" class="btn order-link">
+                        Заявки
+                    </a>
+                </td>
+            </tr>
+        </tbody>
+    }
+</table>
+@code {
+    private WeatherForecast[] forecasts;
+    public List<Customer> customers{ get; set; } = new List<Customer>();
+    public int newCustomerId;
+    public string newUserName;
+    public string newUserSurName;
+    public string newUserLastName;
+    public string newUserLogin;
+    public string newUserPassword;
+    public string newUserEmail;
+    public string newUserPhone;
+    public void addUser()
+    {
+        customers.Add(new Customer
+            {
+                CustomerId = newCustomerId,
+                Name = newUserName,
+                SurName = newUserSurName,
+                LastName = newUserLastName,
+                Login = newUserLogin,
+                Password = newUserPassword,
+                Email = newUserEmail,
+                PhoneNumber = newUserPhone,
+    });
+
+        newUserName = string.Empty;
+        newUserSurName = string.Empty;
+        newUserLastName = string.Empty;
+        newUserLogin = string.Empty;
+        newUserPassword = string.Empty;
+        newUserEmail = string.Empty;
+        newUserPhone = string.Empty;
+    }
+    protected override async Task OnInitializedAsync()
+    {
+        //forecasts = await Http.GetFromJsonAsync<WeatherForecast[]>("WeatherForecast");
+        customers = await Http.GetFromJsonAsync<List<Customer>>("customer");
+        //customers.Add(new Customer
+        //    {
+        //        CustomerId = 1,
+        //        Name = "Данис",
+        //        SurName = "Багаутдинов",
+        //        LastName = "Ильмасович",
+        //        Login = "login",
+        //        Password = "password",
+        //        Email = "dan.daniskin@mail.ru",
+        //        PhoneNumber = "+79375931382",
+        //    });
+    }
+    private void NavigateToCustomerOrders()
+    {
+        NavigationManager.NavigateTo("/customer-orders");
+    }
+
+}

@@ -1,0 +1,10 @@
+C:\Users\danes\OneDrive\Рабочий стол\Обучение\Практика\Практики\CRM_Blazor\Blazor_Crm_SecondVersion\Shared\bin\Debug\netstandard2.1\BlazingChat.Shared.deps.json
+C:\Users\danes\OneDrive\Рабочий стол\Обучение\Практика\Практики\CRM_Blazor\Blazor_Crm_SecondVersion\Shared\bin\Debug\netstandard2.1\BlazingChat.Shared.dll
+C:\Users\danes\OneDrive\Рабочий стол\Обучение\Практика\Практики\CRM_Blazor\Blazor_Crm_SecondVersion\Shared\bin\Debug\netstandard2.1\BlazingChat.Shared.pdb
+C:\Users\danes\OneDrive\Рабочий стол\Обучение\Практика\Практики\CRM_Blazor\Blazor_Crm_SecondVersion\Shared\obj\Debug\netstandard2.1\BlazingChat.Shared.csproj.AssemblyReference.cache
+C:\Users\danes\OneDrive\Рабочий стол\Обучение\Практика\Практики\CRM_Blazor\Blazor_Crm_SecondVersion\Shared\obj\Debug\netstandard2.1\BlazingChat.Shared.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\danes\OneDrive\Рабочий стол\Обучение\Практика\Практики\CRM_Blazor\Blazor_Crm_SecondVersion\Shared\obj\Debug\netstandard2.1\BlazingChat.Shared.AssemblyInfoInputs.cache
+C:\Users\danes\OneDrive\Рабочий стол\Обучение\Практика\Практики\CRM_Blazor\Blazor_Crm_SecondVersion\Shared\obj\Debug\netstandard2.1\BlazingChat.Shared.AssemblyInfo.cs
+C:\Users\danes\OneDrive\Рабочий стол\Обучение\Практика\Практики\CRM_Blazor\Blazor_Crm_SecondVersion\Shared\obj\Debug\netstandard2.1\BlazingChat.Shared.csproj.CoreCompileInputs.cache
+C:\Users\danes\OneDrive\Рабочий стол\Обучение\Практика\Практики\CRM_Blazor\Blazor_Crm_SecondVersion\Shared\obj\Debug\netstandard2.1\BlazingChat.Shared.dll
+C:\Users\danes\OneDrive\Рабочий стол\Обучение\Практика\Практики\CRM_Blazor\Blazor_Crm_SecondVersion\Shared\obj\Debug\netstandard2.1\BlazingChat.Shared.pdb

@@ -1,0 +1,8 @@
+C:\Users\danes\OneDrive\Рабочий стол\Обучение\Практика\Практики\CRM_Blazor\Blazor_Crm_SecondVersion\Server\obj\Debug\netcoreapp3.1\BlazingChat.Server.csproj.AssemblyReference.cache
+C:\Users\danes\OneDrive\Рабочий стол\Обучение\Практика\Практики\CRM_Blazor\Blazor_Crm_SecondVersion\Server\obj\Debug\netcoreapp3.1\BlazingChat.Server.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\danes\OneDrive\Рабочий стол\Обучение\Практика\Практики\CRM_Blazor\Blazor_Crm_SecondVersion\Server\obj\Debug\netcoreapp3.1\BlazingChat.Server.AssemblyInfoInputs.cache
+C:\Users\danes\OneDrive\Рабочий стол\Обучение\Практика\Практики\CRM_Blazor\Blazor_Crm_SecondVersion\Server\obj\Debug\netcoreapp3.1\BlazingChat.Server.AssemblyInfo.cs
+C:\Users\danes\OneDrive\Рабочий стол\Обучение\Практика\Практики\CRM_Blazor\Blazor_Crm_SecondVersion\Server\obj\Debug\netcoreapp3.1\BlazingChat.Server.csproj.CoreCompileInputs.cache
+C:\Users\danes\OneDrive\Рабочий стол\Обучение\Практика\Практики\CRM_Blazor\Blazor_Crm_SecondVersion\Server\obj\Debug\netcoreapp3.1\BlazingChat.Server.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\danes\OneDrive\Рабочий стол\Обучение\Практика\Практики\CRM_Blazor\Blazor_Crm_SecondVersion\Server\obj\Debug\netcoreapp3.1\BlazingChat.Server.RazorAssemblyInfo.cache
+C:\Users\danes\OneDrive\Рабочий стол\Обучение\Практика\Практики\CRM_Blazor\Blazor_Crm_SecondVersion\Server\obj\Debug\netcoreapp3.1\BlazingChat.Server.RazorAssemblyInfo.cs

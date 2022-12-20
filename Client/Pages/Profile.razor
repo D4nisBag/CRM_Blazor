@@ -1,0 +1,74 @@
+@page "/profile"
+@using Crm_WASM.ViewModels
+@inject HttpClient HttpClient
+@using Crm_WASM.Shared.Models
+
+<div class="window__container new-order__container">
+    <div class="window__upper">
+        <h2 class="auth__title">
+            Мой профиль
+        </h2>
+    </div>
+    <div class="window__lower new-order__lower">
+        <div class="form-group">
+            <label for="firstname">
+                Имя
+            </label>
+            <input @bind-value="_profileViewModel.Name" id="firstname" type="text" class="new-order__input" placeholder="Имя" />
+        </div>
+        <div class="form-group">
+            <label for="surname">
+                Фамилия
+            </label>
+            <input @bind-value="_profileViewModel.Surname" id="surname" type="text" class="new-order__input" placeholder="Фамилия" />
+        </div>
+        <div class="form-group">
+            <label for="lastname">
+                Отчество
+            </label>
+            <input @bind-value="_profileViewModel.Lastname" id="lastname" type="text" class="new-order__input" placeholder="Отчество" />
+        </div>
+        <div class="form-group">
+            <label for="email">
+                E-mail
+            </label>
+            <input @bind-value="_profileViewModel.Email" id="email" type="text" class="new-order__input" placeholder="E-mail" />
+        </div>
+        <div class="form-group">
+            <label for="phone">
+                Номер телефона
+            </label>
+            <input @bind-value="_profileViewModel.PhoneNumber" id="phone" type="text" class="new-order__input" placeholder="Номер телефона" />
+        </div>
+        <button @onclick="GetProfile" class="new-order btn">Получить данные</button>       
+        <button @onclick="UpdateProfile" class="new-order btn">Обновить данные</button>
+        <span>&nbsp;&nbsp;</span>
+        @_profileViewModel.Message
+    </div>
+</div>
+
+
+@code {
+    
+    
+    private ProfileViewModel _profileViewModel = new ProfileViewModel();
+    protected override async Task OnInitializedAsync()
+    {
+        Customer customer = await HttpClient.GetFromJsonAsync<Customer>("customer/getprofile/3");
+        _profileViewModel = customer;
+        _profileViewModel.Message = "Профиль успешно загружен";
+    }
+    private async Task UpdateProfile()
+    {
+        Customer customer = _profileViewModel;
+        await HttpClient.PutAsJsonAsync("customer/updateprofile/3", customer);
+        _profileViewModel.Message = "Профиль успешно обновлен";
+    }
+
+    private async Task GetProfile()
+    {
+        Customer customer = await HttpClient.GetFromJsonAsync<Customer>("customer/getprofile/3");
+        _profileViewModel = customer;
+        _profileViewModel.Message = "Профиль успешно загружен";
+    }
+}

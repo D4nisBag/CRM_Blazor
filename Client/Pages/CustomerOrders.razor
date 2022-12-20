@@ -1,0 +1,9 @@
+﻿@page "/customer-orders/{CustomerId:int}"
+
+<h3>@CustomerId</h3>
+
+@code {
+    [Parameter]
+    public int CustomerId { get; set; }
+
+}
