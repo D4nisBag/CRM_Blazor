@@ -1,7 +1,7 @@
 ﻿self.assetsManifest = {
   "assets": [
     {
-      "hash": "sha256-2AbIMbz3Ylec51Oit6p86yrv8WZLTUot94J9OsVm5o4=",
+      "hash": "sha256-MtFdt5ouQoU8qAP+xvVZ5Uf1DSjQmBB0xQdwLqeNL6A=",
       "url": "css\/app.css"
     },
     {
@@ -65,28 +65,12 @@
       "url": "manifest.json"
     },
     {
-      "hash": "sha256-BJ1csN+3sapa6CRFaLl\/bVZtqW7E6kF8\/QmS0NturF0=",
+      "hash": "sha256-PWO0SvBvWYdhQ1ryeLwL0WjzDQ5xjjviRi3SexvA9Yc=",
       "url": "_framework\/_bin\/Crm_WASM.Client.dll"
     },
     {
-      "hash": "sha256-pzCorxTCjbUODF5JuRgcHc8gVYEdSaKD9NWA6wZhTPE=",
-      "url": "_framework\/_bin\/System.Text.Json.dll"
-    },
-    {
-      "hash": "sha256-kL\/omZDwqByAi+lPdMeDmr3XjHcn4RVb+LmZ4mut1Yc=",
-      "url": "_framework\/_bin\/System.Runtime.CompilerServices.Unsafe.dll"
-    },
-    {
-      "hash": "sha256-BaZPMj95+YNe3G4ckTGD6szZFwZeA2MOHn91zTGKDeU=",
-      "url": "_framework\/_bin\/mscorlib.dll"
-    },
-    {
-      "hash": "sha256-ZxXy75PYbzJxNfAc\/SAP1nUYm4gt1jSaOpFnBb9m85M=",
-      "url": "_framework\/_bin\/System.Buffers.dll"
-    },
-    {
-      "hash": "sha256-OBWh2or+2mU6elwqPfmL72FBZVKl2WzTJ4L\/IrKeXM4=",
-      "url": "_framework\/_bin\/Microsoft.Bcl.AsyncInterfaces.dll"
+      "hash": "sha256-ycn\/UHLnjC77BNvsurP4mkuYP8oud1oVyfSSlZKMymc=",
+      "url": "_framework\/_bin\/Microsoft.Extensions.DependencyInjection.Abstractions.dll"
     },
     {
       "hash": "sha256-\/zcPVM75OAY+joGVM8yIC1gO1SFYWP1CFERgQ8PJkfA=",
@@ -111,6 +95,10 @@
     {
       "hash": "sha256-\/cPXlNTX8GKF\/lIn\/2DIjtxTe0Wpy4ZDcyAj67b6JYk=",
       "url": "_framework\/_bin\/System.Memory.dll"
+    },
+    {
+      "hash": "sha256-BaZPMj95+YNe3G4ckTGD6szZFwZeA2MOHn91zTGKDeU=",
+      "url": "_framework\/_bin\/mscorlib.dll"
     },
     {
       "hash": "sha256-6XMT1eT3svGdg6hFzAHJscYdTQjakoYccYTdHmKSr7Y=",
@@ -173,6 +161,22 @@
       "url": "_framework\/_bin\/System.Data.dll"
     },
     {
+      "hash": "sha256-pzCorxTCjbUODF5JuRgcHc8gVYEdSaKD9NWA6wZhTPE=",
+      "url": "_framework\/_bin\/System.Text.Json.dll"
+    },
+    {
+      "hash": "sha256-kL\/omZDwqByAi+lPdMeDmr3XjHcn4RVb+LmZ4mut1Yc=",
+      "url": "_framework\/_bin\/System.Runtime.CompilerServices.Unsafe.dll"
+    },
+    {
+      "hash": "sha256-ZxXy75PYbzJxNfAc\/SAP1nUYm4gt1jSaOpFnBb9m85M=",
+      "url": "_framework\/_bin\/System.Buffers.dll"
+    },
+    {
+      "hash": "sha256-OBWh2or+2mU6elwqPfmL72FBZVKl2WzTJ4L\/IrKeXM4=",
+      "url": "_framework\/_bin\/Microsoft.Bcl.AsyncInterfaces.dll"
+    },
+    {
       "hash": "sha256-TkH6yxFQlTfY8NfznePrCdYJiEVpM9Dqy4Uu4H9qk10=",
       "url": "_framework\/_bin\/System.Threading.Tasks.Extensions.dll"
     },
@@ -187,10 +191,6 @@
     {
       "hash": "sha256-99dseBOagY3mzu5Y8Eqm8gRI+o8QbbCp7R2Ew9bQ+5E=",
       "url": "_framework\/_bin\/System.Net.Http.Json.dll"
-    },
-    {
-      "hash": "sha256-ycn\/UHLnjC77BNvsurP4mkuYP8oud1oVyfSSlZKMymc=",
-      "url": "_framework\/_bin\/Microsoft.Extensions.DependencyInjection.Abstractions.dll"
     },
     {
       "hash": "sha256-v4LhihP26fP\/dVajppSCZIrCVbkiALCJgAisyG2cmJQ=",
@@ -273,15 +273,15 @@
       "url": "_framework\/_bin\/Microsoft.JSInterop.WebAssembly.dll"
     },
     {
-      "hash": "sha256-l5cDl1Mapc3\/5eyP7qJR\/VRvGpsTsXjiV8ANhe3Yi5s=",
+      "hash": "sha256-xXWZNKmbNpTA3OP1indNnB1z6E\/+BhBjB+hheuB6CGE=",
       "url": "_framework\/_bin\/Crm_WASM.Shared.dll"
     },
     {
-      "hash": "sha256-\/PssZZNdfVSYDG+WVTbWPzvnndOpvVpSA3yTXcX1Xb4=",
+      "hash": "sha256-aEK1khehzLakvCvsDwQxowfwhp+o0A6iK9Vjllca1+E=",
       "url": "_framework\/_bin\/Crm_WASM.Client.pdb"
     },
     {
-      "hash": "sha256-E5qOSUs5ld5yy3sUYEwZX5gDEmt\/KNtQlWxHjYTwffs=",
+      "hash": "sha256-L5gqP+IgpkZ4wNjvpHnH7QVEAwj5BonkXy\/XsLnjE+E=",
       "url": "_framework\/_bin\/Crm_WASM.Shared.pdb"
     },
     {
@@ -301,7 +301,7 @@
       "url": "_framework\/blazor.webassembly.js"
     },
     {
-      "hash": "sha256-Uh0H6d37ovcH9eh9Jd91GmyTmBH2juXBPSv2PoU+7JM=",
+      "hash": "sha256-SKUa8CAH2GoT\/9uJXJiXogHMN0oLjokTsk81252ZzvE=",
       "url": "_framework\/blazor.boot.json"
     }
   ],

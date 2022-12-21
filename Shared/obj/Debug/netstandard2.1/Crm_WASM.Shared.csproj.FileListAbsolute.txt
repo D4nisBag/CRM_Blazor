@@ -28,3 +28,13 @@ C:\Users\danes\OneDrive\Рабочий стол\Обучение\Практик�
 C:\Users\danes\OneDrive\Рабочий стол\Обучение\Практика\Практики\CRM_Blazor\THird\Shared\obj\Debug\netstandard2.1\Crm_WASM.Shared.csproj.CoreCompileInputs.cache
 C:\Users\danes\OneDrive\Рабочий стол\Обучение\Практика\Практики\CRM_Blazor\THird\Shared\obj\Debug\netstandard2.1\Crm_WASM.Shared.dll
 C:\Users\danes\OneDrive\Рабочий стол\Обучение\Практика\Практики\CRM_Blazor\THird\Shared\obj\Debug\netstandard2.1\Crm_WASM.Shared.pdb
+C:\Users\danes\OneDrive\Рабочий стол\Обучение\Практика\Практики\CRM_Blazor\Shared\bin\Debug\netstandard2.1\Crm_WASM.Shared.deps.json
+C:\Users\danes\OneDrive\Рабочий стол\Обучение\Практика\Практики\CRM_Blazor\Shared\bin\Debug\netstandard2.1\Crm_WASM.Shared.dll
+C:\Users\danes\OneDrive\Рабочий стол\Обучение\Практика\Практики\CRM_Blazor\Shared\bin\Debug\netstandard2.1\Crm_WASM.Shared.pdb
+C:\Users\danes\OneDrive\Рабочий стол\Обучение\Практика\Практики\CRM_Blazor\Shared\obj\Debug\netstandard2.1\Crm_WASM.Shared.csproj.AssemblyReference.cache
+C:\Users\danes\OneDrive\Рабочий стол\Обучение\Практика\Практики\CRM_Blazor\Shared\obj\Debug\netstandard2.1\Crm_WASM.Shared.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\danes\OneDrive\Рабочий стол\Обучение\Практика\Практики\CRM_Blazor\Shared\obj\Debug\netstandard2.1\Crm_WASM.Shared.AssemblyInfoInputs.cache
+C:\Users\danes\OneDrive\Рабочий стол\Обучение\Практика\Практики\CRM_Blazor\Shared\obj\Debug\netstandard2.1\Crm_WASM.Shared.AssemblyInfo.cs
+C:\Users\danes\OneDrive\Рабочий стол\Обучение\Практика\Практики\CRM_Blazor\Shared\obj\Debug\netstandard2.1\Crm_WASM.Shared.csproj.CoreCompileInputs.cache
+C:\Users\danes\OneDrive\Рабочий стол\Обучение\Практика\Практики\CRM_Blazor\Shared\obj\Debug\netstandard2.1\Crm_WASM.Shared.dll
+C:\Users\danes\OneDrive\Рабочий стол\Обучение\Практика\Практики\CRM_Blazor\Shared\obj\Debug\netstandard2.1\Crm_WASM.Shared.pdb

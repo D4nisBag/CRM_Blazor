@@ -1,57 +1,68 @@
 ﻿@page "/my-orders"
+@using Crm_WASM.Shared
+@inject HttpClient Http
+@inject NavigationManager NavigationManager
 
-<div class="window__container new-order__container">
-    <div class="window__upper">
-        <h2 class="auth__title">
-            Мои заявки
-        </h2>
-    </div>
-    <div class="window__lower new-order__lower">
-        <p class="auth__lower-par">
-            Оставьте заявку, мы с вами свяжемся
-        </p>
-        <div class="form-group">
-            <label for="name">
-                Название
-            </label>
-            <input id="name" type="text" class="new-order__input" placeholder="Введите название заявки" />
-        </div>
-        <div class="form-group">
-            <label for="message">
-                Сообщение*
-            </label>
-            <input id="message" type="text" class="new-order__input" placeholder="Сообщение*" />
-        </div>
-        <div class="form-group">
-            <label for="dispatch">
+<h3>Мои заявок</h3>
+<table class="table table-stripped">
+    <thead class="table-dark">
+        <tr>
+            <th scope="col">
+                id заявки
+            </th>
+            <th scope="col">
+                Полное имя
+            </th>
+            <th scope="col">
                 Адрес отправления
-            </label>
-            <input id="dispatch" type="text" class="new-order__input" placeholder="Адрес отправления" />
-        </div>
-        <div class="form-group">
-            <label for="target">
+            </th>
+            <th scope="col">
                 Адрес прибытия
-            </label>
-            <input id="target" type="text" class="new-order__input" placeholder="Адрес прибытия" />
-        </div>
-        <div class="form-group">
-            <label for="weight">
+            </th>
+            <th scope="col">
                 Общий вес
-            </label>
-            <input id="weight" type="text" class="new-order__input" placeholder="Общий вес товара" />
-        </div>
-        <div class="form-group">
-            <label for="products">
-                Отправляемый товар
-            </label>
-            <input id="products" type="text" class="new-order__input" placeholder="Перечислите отправляемый товар" />
-        </div>
-
-        <button class="new-order btn">Отправить</button>
-    </div>
-</div>
-
+            </th>
+            <th scope="col">
+            </th>
+        </tr>
+    </thead>
+    @foreach (var item in orders)
+    {
+        if(item.CustomerId == myId)
+        {
+            <tbody>
+            <tr>
+                <td>
+                    @item.OrderId
+                </td>
+                <td>
+                    @item.OrderName
+                </td>
+                <td>
+                    @item.DispatchAdress
+                </td>
+                <td>
+                    @item.TargetAdress
+                </td>
+                <td>
+                    @item.Weight
+                </td>
+                <td>
+                    <a href="/single-order/@item.OrderId" class="btn order-link">
+                        Подробнее...
+                    </a>
+                </td>
+            </tr>
+        </tbody>
+        }
+    }
+</table>
 
 @code {
-
+    public int myId = 1;
+    public List<Order> orders{ get; set; } = new List<Order>();
+    protected override async Task OnInitializedAsync()
+    {
+        orders = await Http.GetFromJsonAsync<List<Order>>("order");
+    }
 }

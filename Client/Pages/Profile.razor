@@ -1,6 +1,6 @@
 @page "/profile"
 @using Crm_WASM.ViewModels
-@inject HttpClient HttpClient
+@inject ProfileViewModel _profileViewModel
 @using Crm_WASM.Shared.Models
 
 <div class="window__container new-order__container">
@@ -39,10 +39,9 @@
                 Номер телефона
             </label>
             <input @bind-value="_profileViewModel.PhoneNumber" id="phone" type="text" class="new-order__input" placeholder="Номер телефона" />
-        </div>
-        <button @onclick="GetProfile" class="new-order btn">Получить данные</button>       
-        <button @onclick="UpdateProfile" class="new-order btn">Обновить данные</button>
-        <span>&nbsp;&nbsp;</span>
+        </div>     
+        <button @onclick="_profileViewModel.UpdateProfile" class="new-order btn">Изменить данные</button>
+        <span>&nbsp;</span>
         @_profileViewModel.Message
     </div>
 </div>
@@ -50,25 +49,9 @@
 
 @code {
     
-    
-    private ProfileViewModel _profileViewModel = new ProfileViewModel();
-    protected override async Task OnInitializedAsync()
-    {
-        Customer customer = await HttpClient.GetFromJsonAsync<Customer>("customer/getprofile/3");
-        _profileViewModel = customer;
-        _profileViewModel.Message = "Профиль успешно загружен";
-    }
-    private async Task UpdateProfile()
-    {
-        Customer customer = _profileViewModel;
-        await HttpClient.PutAsJsonAsync("customer/updateprofile/3", customer);
-        _profileViewModel.Message = "Профиль успешно обновлен";
-    }
 
-    private async Task GetProfile()
-    {
-        Customer customer = await HttpClient.GetFromJsonAsync<Customer>("customer/getprofile/3");
-        _profileViewModel = customer;
-        _profileViewModel.Message = "Профиль успешно загружен";
-    }
+        protected override async Task OnInitializedAsync()
+        {
+            await _profileViewModel.GetProfile();
+        }
 }

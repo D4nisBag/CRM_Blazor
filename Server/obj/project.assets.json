@@ -1898,11 +1898,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\danes\\OneDrive\\Рабочий стол\\Обучение\\Практика\\Практики\\CRM_Blazor\\THird\\server\\Crm_WASM.Server.csproj",
+      "projectUniqueName": "C:\\Users\\danes\\OneDrive\\Рабочий стол\\Обучение\\Практика\\Практики\\CRM_Blazor\\Server\\Crm_WASM.Server.csproj",
       "projectName": "Crm_WASM.Server",
-      "projectPath": "C:\\Users\\danes\\OneDrive\\Рабочий стол\\Обучение\\Практика\\Практики\\CRM_Blazor\\THird\\server\\Crm_WASM.Server.csproj",
+      "projectPath": "C:\\Users\\danes\\OneDrive\\Рабочий стол\\Обучение\\Практика\\Практики\\CRM_Blazor\\Server\\Crm_WASM.Server.csproj",
       "packagesPath": "C:\\Users\\danes\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\danes\\OneDrive\\Рабочий стол\\Обучение\\Практика\\Практики\\CRM_Blazor\\THird\\server\\obj\\",
+      "outputPath": "C:\\Users\\danes\\OneDrive\\Рабочий стол\\Обучение\\Практика\\Практики\\CRM_Blazor\\Server\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\danes\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -1919,11 +1919,11 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "C:\\Users\\danes\\OneDrive\\Рабочий стол\\Обучение\\Практика\\Практики\\CRM_Blazor\\THird\\Client\\Crm_WASM.Client.csproj": {
-              "projectPath": "C:\\Users\\danes\\OneDrive\\Рабочий стол\\Обучение\\Практика\\Практики\\CRM_Blazor\\THird\\Client\\Crm_WASM.Client.csproj"
+            "C:\\Users\\danes\\OneDrive\\Рабочий стол\\Обучение\\Практика\\Практики\\CRM_Blazor\\Client\\Crm_WASM.Client.csproj": {
+              "projectPath": "C:\\Users\\danes\\OneDrive\\Рабочий стол\\Обучение\\Практика\\Практики\\CRM_Blazor\\Client\\Crm_WASM.Client.csproj"
             },
-            "C:\\Users\\danes\\OneDrive\\Рабочий стол\\Обучение\\Практика\\Практики\\CRM_Blazor\\THird\\Shared\\Crm_WASM.Shared.csproj": {
-              "projectPath": "C:\\Users\\danes\\OneDrive\\Рабочий стол\\Обучение\\Практика\\Практики\\CRM_Blazor\\THird\\Shared\\Crm_WASM.Shared.csproj"
+            "C:\\Users\\danes\\OneDrive\\Рабочий стол\\Обучение\\Практика\\Практики\\CRM_Blazor\\Shared\\Crm_WASM.Shared.csproj": {
+              "projectPath": "C:\\Users\\danes\\OneDrive\\Рабочий стол\\Обучение\\Практика\\Практики\\CRM_Blazor\\Shared\\Crm_WASM.Shared.csproj"
             }
           }
         }

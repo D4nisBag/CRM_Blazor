@@ -1,0 +1,70 @@
+﻿@page "/order-list"
+@using Crm_WASM.Shared
+@inject HttpClient Http
+@inject NavigationManager NavigationManager
+
+<h3>Список заявок</h3>
+<table class="table table-stripped">
+    <thead class="table-dark">
+        <tr>
+            <th scope="col">
+                id заявки
+            </th>
+            <th scope="col">
+                id клиента
+            </th>
+            <th scope="col">
+                Полное имя
+            </th>
+            <th scope="col">
+                Адрес отправления
+            </th>
+            <th scope="col">
+                Адрес прибытия
+            </th>
+            <th scope="col">
+                Общий вес
+            </th>
+            <th scope="col">
+            </th>
+        </tr>
+    </thead>
+    @foreach (var item in orders)
+    {
+        <tbody>
+            <tr>
+                <td>
+                    @item.OrderId
+                </td>
+                <td>
+                    @item.CustomerId
+                </td>
+                <td>
+                    @item.OrderName
+                </td>
+                <td>
+                    @item.DispatchAdress
+                </td>
+                <td>
+                    @item.TargetAdress
+                </td>
+                <td>
+                    @item.Weight
+                </td>
+                <td>
+                    <a href="/single-order/@item.OrderId" class="btn order-link">
+                        Подробнее...
+                    </a>
+                </td>
+            </tr>
+        </tbody>
+    }
+</table>
+
+@code {
+    public List<Order> orders{ get; set; } = new List<Order>();
+    protected override async Task OnInitializedAsync()
+    {
+        orders = await Http.GetFromJsonAsync<List<Order>>("order");
+    }
+}

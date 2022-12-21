@@ -1598,11 +1598,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\danes\\OneDrive\\Рабочий стол\\Обучение\\Практика\\Практики\\CRM_Blazor\\THird\\Client\\Crm_WASM.Client.csproj",
+      "projectUniqueName": "C:\\Users\\danes\\OneDrive\\Рабочий стол\\Обучение\\Практика\\Практики\\CRM_Blazor\\Client\\Crm_WASM.Client.csproj",
       "projectName": "Crm_WASM.Client",
-      "projectPath": "C:\\Users\\danes\\OneDrive\\Рабочий стол\\Обучение\\Практика\\Практики\\CRM_Blazor\\THird\\Client\\Crm_WASM.Client.csproj",
+      "projectPath": "C:\\Users\\danes\\OneDrive\\Рабочий стол\\Обучение\\Практика\\Практики\\CRM_Blazor\\Client\\Crm_WASM.Client.csproj",
       "packagesPath": "C:\\Users\\danes\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\danes\\OneDrive\\Рабочий стол\\Обучение\\Практика\\Практики\\CRM_Blazor\\THird\\Client\\obj\\",
+      "outputPath": "C:\\Users\\danes\\OneDrive\\Рабочий стол\\Обучение\\Практика\\Практики\\CRM_Blazor\\Client\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\danes\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -1619,8 +1619,8 @@
         "netstandard2.1": {
           "targetAlias": "netstandard2.1",
           "projectReferences": {
-            "C:\\Users\\danes\\OneDrive\\Рабочий стол\\Обучение\\Практика\\Практики\\CRM_Blazor\\THird\\Shared\\Crm_WASM.Shared.csproj": {
-              "projectPath": "C:\\Users\\danes\\OneDrive\\Рабочий стол\\Обучение\\Практика\\Практики\\CRM_Blazor\\THird\\Shared\\Crm_WASM.Shared.csproj"
+            "C:\\Users\\danes\\OneDrive\\Рабочий стол\\Обучение\\Практика\\Практики\\CRM_Blazor\\Shared\\Crm_WASM.Shared.csproj": {
+              "projectPath": "C:\\Users\\danes\\OneDrive\\Рабочий стол\\Обучение\\Практика\\Практики\\CRM_Blazor\\Shared\\Crm_WASM.Shared.csproj"
             }
           }
         }

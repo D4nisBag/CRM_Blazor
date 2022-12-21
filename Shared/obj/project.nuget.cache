@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "dj0sBEIamBu8WimtghFki/mcNXf6LoyEMeuJq725qB5/Fx4NQ0SCduymqXK2gLOSYFZFpPAdJdoFrampXs9+sQ==",
+  "dgSpecHash": "uGs9PdT24hZp03+oEkeTIkSj+3s0pjzRwCIrCvX84DELEXaUjQTMGxqo9sr8tjweGmuEcj/hKUP7Dc0v7WnWFg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\danes\\OneDrive\\Рабочий стол\\Обучение\\Практика\\Практики\\CRM_Blazor\\THird\\Shared\\Crm_WASM.Shared.csproj",
+  "projectFilePath": "C:\\Users\\danes\\OneDrive\\Рабочий стол\\Обучение\\Практика\\Практики\\CRM_Blazor\\Shared\\Crm_WASM.Shared.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

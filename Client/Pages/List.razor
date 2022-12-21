@@ -1,6 +1,9 @@
-﻿@page "/list"
+﻿@page "/client-list"
+@using Crm_WASM.Shared
+@inject HttpClient Http
+@inject NavigationManager NavigationManager
 
-<h3>List</h3>
+<h3>Список клиентов</h3>
 <table class="table table-stripped">
     <thead class="table-dark">
         <tr>
@@ -11,20 +14,16 @@
                 Полное имя
             </th>
             <th scope="col">
-                Адрес отправления
+                Email
             </th>
             <th scope="col">
-                Адрес прибытия
+                Номер телефона
             </th>
             <th scope="col">
-                Общий вес
-            </th>
-            <th scope="col">
-                Товар
             </th>
         </tr>
     </thead>
-   @* @foreach (var item in orders)
+    @foreach (var item in customers)
     {
         <tbody>
             <tr>
@@ -32,25 +31,28 @@
                     @item.CustomerId
                 </td>
                 <td>
-                    @item.Name
+                    @item.Name @item.SurName @item.LastName
                 </td>
                 <td>
-                    @item.DispatchAdress
+                    @item.Email
                 </td>
                 <td>
-                    @item.TargetAdress
+                    @item.PhoneNumber
                 </td>
                 <td>
-                    @item.Weight
-                </td>
-                <td>
-                    @item.SendingProduct
+                    <a href="/customer-orders/@item.CustomerId" class="btn order-link">
+                        Заявки
+                    </a>
                 </td>
             </tr>
         </tbody>
-    }*@
+    }
 </table>
 
 @code {
-    //public IList<Orders> orders = new List<Orders>();
+    public List<Customer> customers{ get; set; } = new List<Customer>();
+    protected override async Task OnInitializedAsync()
+    {
+        customers = await Http.GetFromJsonAsync<List<Customer>>("customer");
+    }
 }

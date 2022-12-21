@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "/mtJLczn/vY4oLB3K/g4IX+S7DJ6S83pOCANkEd7BjvhoVGTtV1gpMtBV3lGiH3mVTeJZXd1qDakmg6jxg2NmQ==",
+  "dgSpecHash": "v0FBW9YnuXygPgb2uOgwSs9xf3X7ySQCMC/FBLXBh6Y1GE3YuPwPQAUNIZg4Gq4Sw+yYGvJGTiUL5gs2dCZINg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\danes\\OneDrive\\Рабочий стол\\Обучение\\Практика\\Практики\\CRM_Blazor\\THird\\Client\\Crm_WASM.Client.csproj",
+  "projectFilePath": "C:\\Users\\danes\\OneDrive\\Рабочий стол\\Обучение\\Практика\\Практики\\CRM_Blazor\\Client\\Crm_WASM.Client.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\danes\\.nuget\\packages\\microsoft.aspnetcore.authorization\\3.1.3\\microsoft.aspnetcore.authorization.3.1.3.nupkg.sha512",
     "C:\\Users\\danes\\.nuget\\packages\\microsoft.aspnetcore.components\\3.1.3\\microsoft.aspnetcore.components.3.1.3.nupkg.sha512",

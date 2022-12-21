@@ -147,14 +147,17 @@ a, .btn-link {
 }
 
 .nav-scrollable {
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
     border-bottom-right-radius: 10%;
-    width: 400px;
+    width: 300px;
     z-index: 3;
     background: white;
 }
 
-
+.nav-scrollable {
+    position: absolute !important;
+    top: 39.9px;
+    left:0;
+}
 
 
 .auth__container {
@@ -178,8 +181,10 @@ a, .btn-link {
 }
 
 .content {
+    padding-top: 150px;
     padding-right: 40px;
     color: black;
+    padding-left: 340px;
 }
 
 

@@ -24,50 +24,6 @@
         <p class="auth__register-par">Уже есть аккаунт?<a class="auth__press-here" href="login">Войти</a></p>
     </div>
 </div>
-<table class="table table-stripped">
-    <thead class="table-dark">
-        <tr>
-            <th scope="col">
-                id
-            </th>
-            <th scope="col">
-                Полное имя
-            </th>
-            <th scope="col">
-                Email
-            </th>
-            <th scope="col">
-                Номер телефона
-            </th>
-            <th scope="col">
-            </th>
-        </tr>
-    </thead>
-    @foreach (var item in customers)
-    {
-        <tbody>
-            <tr>
-                <td>
-                    @item.CustomerId
-                </td>
-                <td>
-                    @item.Name @item.SurName @item.LastName
-                </td>
-                <td>
-                    @item.Email
-                </td>
-                <td>
-                    @item.PhoneNumber
-                </td>
-                <td>
-                    <a href="/customer-orders/@item.CustomerId" class="btn order-link">
-                        Заявки
-                    </a>
-                </td>
-            </tr>
-        </tbody>
-    }
-</table>
 @code {
     private WeatherForecast[] forecasts;
     public List<Customer> customers{ get; set; } = new List<Customer>();
