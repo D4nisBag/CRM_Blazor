@@ -6,6 +6,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using System.Linq;
+using Microsoft.AspNetCore.Authentication.Cookies;
 using Crm_WASM.Server.Models;
 
 namespace Crm_WASM.Server
@@ -28,6 +29,9 @@ namespace Crm_WASM.Server
             services.AddRazorPages();
 
             services.AddEntityFrameworkSqlite().AddDbContext<Crm_WASMContext>();
+            services.AddAuthentication(options => {
+                options.DefaultScheme = CookieAuthenticationDefaults.AuthenticationScheme;
+            }).AddCookie();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -50,6 +54,8 @@ namespace Crm_WASM.Server
             app.UseStaticFiles();
 
             app.UseRouting();
+
+            app.UseAuthentication();
 
             app.UseEndpoints(endpoints =>
             {

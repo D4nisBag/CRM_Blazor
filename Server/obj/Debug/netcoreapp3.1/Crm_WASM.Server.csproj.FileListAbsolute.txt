@@ -383,3 +383,4 @@ C:\Users\danes\OneDrive\Рабочий стол\Обучение\Практик�
 C:\Users\danes\OneDrive\Рабочий стол\Обучение\Практика\Практики\CRM_Blazor\Server\obj\Debug\netcoreapp3.1\Crm_WASM.Server.Views.pdb
 C:\Users\danes\OneDrive\Рабочий стол\Обучение\Практика\Практики\CRM_Blazor\Server\obj\Debug\netcoreapp3.1\Crm_WASM.Server.csproj.CopyComplete
 C:\Users\danes\OneDrive\Рабочий стол\Обучение\Практика\Практики\CRM_Blazor\Server\obj\Debug\netcoreapp3.1\Crm_WASM.Server.genruntimeconfig.cache
+C:\Users\danes\OneDrive\Рабочий стол\Обучение\Практика\Практики\CRM_Blazor\Server\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Components.Authorization.dll

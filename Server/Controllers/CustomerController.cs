@@ -7,6 +7,10 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using Crm_WASM.Server.Models;
 using Microsoft.EntityFrameworkCore;
+using System.Security.Claims;
+using Microsoft.AspNetCore.Authentication;
+
+
 
 namespace Crm_WASM.Server.Controllers
 {
@@ -60,5 +64,44 @@ namespace Crm_WASM.Server.Controllers
         {
             return await _context.Customers.Where(u => u.Id == customerId).FirstOrDefaultAsync();
         }
+        //для аутентификации
+        [HttpPost("logincustomer")]
+        public async Task<ActionResult<Models.Customer>> LoginCustomer(Models.Customer customer)
+        {
+            Models.Customer loggedInCustomer = await _context.Customers.Where(u => u.Login == customer.Login && u.Password == customer.Password).FirstOrDefaultAsync();
+
+            if(loggedInCustomer != null)
+            {
+                //
+                var claim = new Claim (ClaimTypes.Name, loggedInCustomer.Login);
+                var claimsIdentity = new ClaimsIdentity(new[] {claim}, "serverAuth");
+                var claimsPrincipal = new ClaimsPrincipal(claimsIdentity);
+
+                await HttpContext.SignInAsync(claimsPrincipal);
+            }
+
+            return await Task.FromResult(loggedInCustomer);
+        }
+        [HttpGet("getcurrentcustomer")]
+        public async Task<ActionResult<Models.Customer>> GetCurrentCustomer()
+        {
+            Models.Customer currentCustomer = new Models.Customer();
+            if(User.Identity.IsAuthenticated)
+            {
+                currentCustomer.Login = User.FindFirstValue(ClaimTypes.Name);
+            }
+            
+            return await Task.FromResult(currentCustomer);
+        }
+        [HttpGet("logoutcustomer")]
+        public async Task<ActionResult<String>> LogoutCustomer()
+        {
+            await HttpContext.SignOutAsync();
+            return "Success";
+        }
+        
+
+        
+
     }
 }
