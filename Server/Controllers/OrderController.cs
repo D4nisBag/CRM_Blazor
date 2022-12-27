@@ -40,21 +40,14 @@ namespace Crm_WASM.Server.Controllers
             }
             return orderslist;
         }
-        // [HttpPut("updateprofile/{customerId}")]
-        // public async Task<Models.Customer> UpdateProfile(int customerId, [FromBody] Models.Customer customer)
-        // {
-            
-        //     Models.Customer customerToUpdate = await _context.Customers.Where(u => u.Id == customerId).FirstOrDefaultAsync();
-            
-        //     customerToUpdate.Name = customer.Name;
-        //     customerToUpdate.Surname = customer.Surname;
-        //     customerToUpdate.Lastname = customer.Lastname;
-        //     customerToUpdate.Email = customer.Email;
-        //     customerToUpdate.PhoneNumber = customer.PhoneNumber;
-        //     await _context.SaveChangesAsync();
-
-        //     return await Task.FromResult(customer);
-        // }
+        [HttpPut("updateorder/{Id}")]
+        public async Task<Models.Order> UpdateProfile(int Id, [FromBody] Models.Order order)
+        {
+            Models.Order orderToUpdate = await _context.Orders.Where(u => u.Id == Id).FirstOrDefaultAsync();
+            orderToUpdate.Status = "closed";
+            await _context.SaveChangesAsync();
+            return await Task.FromResult(order);
+        }
 
         // [HttpGet("getprofile/{customerId}")]
         // public async Task<Models.Customer> GetProfile(int customerId)
