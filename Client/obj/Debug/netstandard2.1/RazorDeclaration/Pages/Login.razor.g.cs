@@ -75,6 +75,27 @@ using Crm_WASM.Client.Shared;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 10 "C:\Users\danes\OneDrive\Рабочий стол\Обучение\Практика\Практики\CRM_Blazor\Client\_Imports.razor"
+using Microsoft.AspNetCore.Components.Authorization;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 2 "C:\Users\danes\OneDrive\Рабочий стол\Обучение\Практика\Практики\CRM_Blazor\Client\Pages\Login.razor"
+using Crm_WASM.ViewModels;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 3 "C:\Users\danes\OneDrive\Рабочий стол\Обучение\Практика\Практики\CRM_Blazor\Client\Pages\Login.razor"
+using Crm_WASM.Shared.Models;
+
+#line default
+#line hidden
+#nullable disable
     [global::Microsoft.AspNetCore.Components.RouteAttribute("/login")]
     public partial class Login : global::Microsoft.AspNetCore.Components.ComponentBase
     {
@@ -83,6 +104,21 @@ using Crm_WASM.Client.Shared;
         {
         }
         #pragma warning restore 1998
+#nullable restore
+#line 25 "C:\Users\danes\OneDrive\Рабочий стол\Обучение\Практика\Практики\CRM_Blazor\Client\Pages\Login.razor"
+       
+    public async Task LoginCustomer()
+    {
+        await _loginViewModel.LoginCustomer();
+        _navigationManager.NavigateTo("/profile", true);
+    }
+
+
+#line default
+#line hidden
+#nullable disable
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private NavigationManager _navigationManager { get; set; }
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private LoginViewModel _loginViewModel { get; set; }
     }
 }
 #pragma warning restore 1591

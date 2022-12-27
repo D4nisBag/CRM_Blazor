@@ -6,8 +6,8 @@ namespace Crm_WASM.Shared
 {
     public class Order
     {
-        public int OrderId { get; set; }
-        public int CustomerId { get; set; }
+        public long OrderId { get; set; }
+        public long CustomerId { get; set; }
         public string OrderName { get; set; }
         public string DispatchAdress { get; set; }
         public string TargetAdress { get; set; }
@@ -21,7 +21,7 @@ namespace Crm_WASM.Shared
 
         }
 
-        public Order(int OrderId, int CustomerId, string OrderName, string DispatchAdress,
+        public Order(long OrderId, long CustomerId, string OrderName, string DispatchAdress,
             string TargetAdress, string Weight,string SendingProduct, string Status, string Message)
         {
             this.OrderId= OrderId;

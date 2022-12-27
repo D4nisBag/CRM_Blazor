@@ -2,13 +2,13 @@ using Crm_WASM.Shared.Models;
 using System.Net.Http;
 using System.Threading.Tasks;
 using System.Net.Http.Json;
-
+using System;
 
 namespace Crm_WASM.ViewModels
 {
     public class ProfileViewModel
     {
-        public int Id{ get; set; }
+        public long Id{ get; set; }
         public string Name{ get; set; }
         public string Surname{ get; set; }
         public string Lastname{ get; set; }
@@ -31,15 +31,15 @@ namespace Crm_WASM.ViewModels
         public async Task UpdateProfile()
         {
             Customer customer = this;
-            await _httpClient.PutAsJsonAsync("customer/updateprofile/3", customer);
+            await _httpClient.PutAsJsonAsync("customer/updateprofile/" + this.Id, customer);
             this.Message = "Профиль успешно обновлен";
         }
 
         public async Task GetProfile()
-        {
-            Customer customer = await _httpClient.GetFromJsonAsync<Customer>("customer/getprofile/3");
+        { 
+            Customer customer = await _httpClient.GetFromJsonAsync<Customer>("customer/getprofile/1");
             LoadCurrentObject(customer);
-            this.Message = "Профиль успешно загружен";
+            this.Message = "Профиль успешно загружен, id:" + this.Id;
         }
 
         private void LoadCurrentObject(ProfileViewModel profileViewModel)

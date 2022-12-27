@@ -75,6 +75,13 @@ using Crm_WASM.Client.Shared;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 1 "C:\Users\danes\OneDrive\Рабочий стол\Обучение\Практика\Практики\CRM_Blazor\Client\App.razor"
+using Microsoft.AspNetCore.Components.Authorization;
+
+#line default
+#line hidden
+#nullable disable
     public partial class App : global::Microsoft.AspNetCore.Components.ComponentBase
     {
         #pragma warning disable 1998

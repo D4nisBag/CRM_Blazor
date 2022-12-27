@@ -76,6 +76,13 @@ using Crm_WASM.Client.Shared;
 #line hidden
 #nullable disable
 #nullable restore
+#line 10 "C:\Users\danes\OneDrive\Рабочий стол\Обучение\Практика\Практики\CRM_Blazor\Client\_Imports.razor"
+using Microsoft.AspNetCore.Components.Authorization;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
 #line 2 "C:\Users\danes\OneDrive\Рабочий стол\Обучение\Практика\Практики\CRM_Blazor\Client\Pages\Orders.razor"
 using Crm_WASM.Shared;
 

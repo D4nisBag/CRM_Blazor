@@ -7,7 +7,7 @@ using Microsoft.AspNetCore.Components.WebAssembly.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
-
+using Microsoft.AspNetCore.Components.Authorization;
 using Crm_WASM.ViewModels;
 
 
@@ -20,11 +20,17 @@ namespace Crm_WASM.Client
             var builder = WebAssemblyHostBuilder.CreateDefault(args);
             builder.RootComponents.Add<App>("app");
 
+            builder.Services.AddOptions();
+            builder.Services.AddAuthorizationCore();
+
             builder.Services.AddTransient(sp => new HttpClient { BaseAddress = new Uri(builder.HostEnvironment.BaseAddress) });
 
             builder.Services.AddSingleton<ProfileViewModel>();
-
+            builder.Services.AddSingleton<LoginViewModel>();
+            builder.Services.AddScoped<AuthenticationStateProvider, CustomAuthenticationStateProvider>();
             await builder.Build().RunAsync();
         }
+        
     }
 }
+

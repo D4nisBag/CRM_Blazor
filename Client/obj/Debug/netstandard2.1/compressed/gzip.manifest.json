@@ -1,14 +1,39 @@
 {
   "FilesToCompress": [
     {
-      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\PWO0SvBvWYdhQ1ryeLwL0WjzDQ5xjjviRi3SexvA9Yc=.hash",
+      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\OcyscSelR0AQrx7E4BZjPGU2VpWr5h783Tq5jWC79sA=.hash",
       "Source": "C:\\Users\\danes\\OneDrive\\Рабочий стол\\Обучение\\Практика\\Практики\\CRM_Blazor\\Client\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\Crm_WASM.Client.dll",
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/Crm_WASM.Client.dll.gz"
     },
     {
-      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\ycn-UHLnjC77BNvsurP4mkuYP8oud1oVyfSSlZKMymc=.hash",
-      "Source": "C:\\Users\\danes\\OneDrive\\Рабочий стол\\Обучение\\Практика\\Практики\\CRM_Blazor\\Client\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\Microsoft.Extensions.DependencyInjection.Abstractions.dll",
-      "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/Microsoft.Extensions.DependencyInjection.Abstractions.dll.gz"
+      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\XR0ovsWHMInelJx0wdN2v0xH-LJF18-lAx9gsLcqCwA=.hash",
+      "Source": "C:\\Users\\danes\\OneDrive\\Рабочий стол\\Обучение\\Практика\\Практики\\CRM_Blazor\\Client\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\Microsoft.AspNetCore.Authorization.dll",
+      "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/Microsoft.AspNetCore.Authorization.dll.gz"
+    },
+    {
+      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\CNukDMTMsZ77nI593UgjfZkJqNhgDLvnpUjL2QzFL2M=.hash",
+      "Source": "C:\\Users\\danes\\OneDrive\\Рабочий стол\\Обучение\\Практика\\Практики\\CRM_Blazor\\Client\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\Microsoft.Extensions.Options.dll",
+      "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/Microsoft.Extensions.Options.dll.gz"
+    },
+    {
+      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\ylX7VKoH7433xA_yHLYr6lPOuhCKV4qhw7GLUx6J82E=.hash",
+      "Source": "C:\\Users\\danes\\OneDrive\\Рабочий стол\\Обучение\\Практика\\Практики\\CRM_Blazor\\Client\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\Microsoft.Extensions.Primitives.dll",
+      "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/Microsoft.Extensions.Primitives.dll.gz"
+    },
+    {
+      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\kL-omZDwqByAi_lPdMeDmr3XjHcn4RVb_LmZ4mut1Yc=.hash",
+      "Source": "C:\\Users\\danes\\OneDrive\\Рабочий стол\\Обучение\\Практика\\Практики\\CRM_Blazor\\Client\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\System.Runtime.CompilerServices.Unsafe.dll",
+      "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/System.Runtime.CompilerServices.Unsafe.dll.gz"
+    },
+    {
+      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\BaZPMj95_YNe3G4ckTGD6szZFwZeA2MOHn91zTGKDeU=.hash",
+      "Source": "C:\\Users\\danes\\OneDrive\\Рабочий стол\\Обучение\\Практика\\Практики\\CRM_Blazor\\Client\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\mscorlib.dll",
+      "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/mscorlib.dll.gz"
+    },
+    {
+      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\-cPXlNTX8GKF-lIn-2DIjtxTe0Wpy4ZDcyAj67b6JYk=.hash",
+      "Source": "C:\\Users\\danes\\OneDrive\\Рабочий стол\\Обучение\\Практика\\Практики\\CRM_Blazor\\Client\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\System.Memory.dll",
+      "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/System.Memory.dll.gz"
     },
     {
       "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\-zcPVM75OAY_joGVM8yIC1gO1SFYWP1CFERgQ8PJkfA=.hash",
@@ -34,16 +59,6 @@
       "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\ob5gN-szfb1CwWnyQWvWvuid3u4df593KvZeoJQEaKc=.hash",
       "Source": "C:\\Users\\danes\\OneDrive\\Рабочий стол\\Обучение\\Практика\\Практики\\CRM_Blazor\\Client\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\WebAssembly.Net.WebSockets.dll",
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/WebAssembly.Net.WebSockets.dll.gz"
-    },
-    {
-      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\-cPXlNTX8GKF-lIn-2DIjtxTe0Wpy4ZDcyAj67b6JYk=.hash",
-      "Source": "C:\\Users\\danes\\OneDrive\\Рабочий стол\\Обучение\\Практика\\Практики\\CRM_Blazor\\Client\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\System.Memory.dll",
-      "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/System.Memory.dll.gz"
-    },
-    {
-      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\BaZPMj95_YNe3G4ckTGD6szZFwZeA2MOHn91zTGKDeU=.hash",
-      "Source": "C:\\Users\\danes\\OneDrive\\Рабочий стол\\Обучение\\Практика\\Практики\\CRM_Blazor\\Client\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\mscorlib.dll",
-      "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/mscorlib.dll.gz"
     },
     {
       "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\6XMT1eT3svGdg6hFzAHJscYdTQjakoYccYTdHmKSr7Y=.hash",
@@ -121,14 +136,24 @@
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/System.Data.dll.gz"
     },
     {
-      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\pzCorxTCjbUODF5JuRgcHc8gVYEdSaKD9NWA6wZhTPE=.hash",
-      "Source": "C:\\Users\\danes\\OneDrive\\Рабочий стол\\Обучение\\Практика\\Практики\\CRM_Blazor\\Client\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\System.Text.Json.dll",
-      "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/System.Text.Json.dll.gz"
+      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\tjbh51aVu1kTNULze_ql74GraZd0WcTaq28VNttAPKA=.hash",
+      "Source": "C:\\Users\\danes\\OneDrive\\Рабочий стол\\Обучение\\Практика\\Практики\\CRM_Blazor\\Client\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\Microsoft.Extensions.DependencyInjection.Abstractions.dll",
+      "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/Microsoft.Extensions.DependencyInjection.Abstractions.dll.gz"
     },
     {
-      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\kL-omZDwqByAi_lPdMeDmr3XjHcn4RVb_LmZ4mut1Yc=.hash",
-      "Source": "C:\\Users\\danes\\OneDrive\\Рабочий стол\\Обучение\\Практика\\Практики\\CRM_Blazor\\Client\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\System.Runtime.CompilerServices.Unsafe.dll",
-      "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/System.Runtime.CompilerServices.Unsafe.dll.gz"
+      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\5PQXYy2FLSDcNc4B9bl74TWsx7WuZ4TnRcQa9UUnzL8=.hash",
+      "Source": "C:\\Users\\danes\\OneDrive\\Рабочий стол\\Обучение\\Практика\\Практики\\CRM_Blazor\\Client\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\Microsoft.AspNetCore.Metadata.dll",
+      "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/Microsoft.AspNetCore.Metadata.dll.gz"
+    },
+    {
+      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\82ZFUNQ-lINILPY15Gjhju9hI7B2BXjHEQQDTeXhVek=.hash",
+      "Source": "C:\\Users\\danes\\OneDrive\\Рабочий стол\\Обучение\\Практика\\Практики\\CRM_Blazor\\Client\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\Microsoft.Extensions.Logging.Abstractions.dll",
+      "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/Microsoft.Extensions.Logging.Abstractions.dll.gz"
+    },
+    {
+      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\HQeN_ZfHAERO_uW0fP0J9J3WV1hQ3vUIOWbqGSYBPp8=.hash",
+      "Source": "C:\\Users\\danes\\OneDrive\\Рабочий стол\\Обучение\\Практика\\Практики\\CRM_Blazor\\Client\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\System.Text.Json.dll",
+      "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/System.Text.Json.dll.gz"
     },
     {
       "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\ZxXy75PYbzJxNfAc-SAP1nUYm4gt1jSaOpFnBb9m85M=.hash",
@@ -151,7 +176,7 @@
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/System.Numerics.Vectors.dll.gz"
     },
     {
-      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\hbEA2pdvgll2bWeJXCtehEV3kl3WFnBgQj6ttcesEA4=.hash",
+      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\Tqh1Da_iTRQJEZUGAsMNFuZ4hf1PMf13WApRZod_uw4=.hash",
       "Source": "C:\\Users\\danes\\OneDrive\\Рабочий стол\\Обучение\\Практика\\Практики\\CRM_Blazor\\Client\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\System.Text.Encodings.Web.dll",
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/System.Text.Encodings.Web.dll.gz"
     },
@@ -181,14 +206,9 @@
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/System.ComponentModel.DataAnnotations.dll.gz"
     },
     {
-      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\jqp6xS5jDFDsISGorhiYZQ2if3hAiols6d4C5BNnMQ4=.hash",
+      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\b1xcxkNonzYLxE6P5G7cRDWkdq3btYTXgesf-O9T4zY=.hash",
       "Source": "C:\\Users\\danes\\OneDrive\\Рабочий стол\\Обучение\\Практика\\Практики\\CRM_Blazor\\Client\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\Microsoft.AspNetCore.Components.dll",
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/Microsoft.AspNetCore.Components.dll.gz"
-    },
-    {
-      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\45ia6XmGIa5WI3cHUIE9KhVornlZleYW_B5FPpfD1wQ=.hash",
-      "Source": "C:\\Users\\danes\\OneDrive\\Рабочий стол\\Обучение\\Практика\\Практики\\CRM_Blazor\\Client\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\Microsoft.Extensions.Logging.Abstractions.dll",
-      "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/Microsoft.Extensions.Logging.Abstractions.dll.gz"
     },
     {
       "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\sifIvl02zqfSiv67ZRAsSa_NCvhMgTGrIUNuK8LmCNM=.hash",
@@ -199,11 +219,6 @@
       "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\8Y81cOKaNJHZZvHu0TROikruBOenBHdE5WwI2BOkNNE=.hash",
       "Source": "C:\\Users\\danes\\OneDrive\\Рабочий стол\\Обучение\\Практика\\Практики\\CRM_Blazor\\Client\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\Microsoft.Extensions.DependencyInjection.dll",
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/Microsoft.Extensions.DependencyInjection.dll.gz"
-    },
-    {
-      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\DG1MjidH81NA50uWH63eWmXLCxt18sJzoF2oXVlyvlY=.hash",
-      "Source": "C:\\Users\\danes\\OneDrive\\Рабочий стол\\Обучение\\Практика\\Практики\\CRM_Blazor\\Client\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\Microsoft.Extensions.Primitives.dll",
-      "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/Microsoft.Extensions.Primitives.dll.gz"
     },
     {
       "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\iUTfpj7A29tIp2gl2fLM_w1MwyI8XMmUV8gFe_mJBZI=.hash",
@@ -246,12 +261,7 @@
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/Microsoft.Extensions.Logging.dll.gz"
     },
     {
-      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\oAIlpv09S-0jXnze744E1V88Oaw8Ql1x3Alw0hsVYdw=.hash",
-      "Source": "C:\\Users\\danes\\OneDrive\\Рабочий стол\\Обучение\\Практика\\Практики\\CRM_Blazor\\Client\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\Microsoft.Extensions.Options.dll",
-      "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/Microsoft.Extensions.Options.dll.gz"
-    },
-    {
-      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\K3dpli228kQQ75WVqoiIdmn8u8q8gZHixcWDdCHCRgU=.hash",
+      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\XFbAHBcZNYlz6PL_SGdEip24fiaqva_7Umq8VeSsots=.hash",
       "Source": "C:\\Users\\danes\\OneDrive\\Рабочий стол\\Обучение\\Практика\\Практики\\CRM_Blazor\\Client\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\Microsoft.JSInterop.dll",
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/Microsoft.JSInterop.dll.gz"
     },
@@ -261,17 +271,22 @@
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/Microsoft.JSInterop.WebAssembly.dll.gz"
     },
     {
-      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\xXWZNKmbNpTA3OP1indNnB1z6E-_BhBjB_hheuB6CGE=.hash",
+      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\b2fZWaaVPbblqeCDluFvt5eg6tWY9u2szMvAzJpD8OM=.hash",
+      "Source": "C:\\Users\\danes\\OneDrive\\Рабочий стол\\Обучение\\Практика\\Практики\\CRM_Blazor\\Client\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\Microsoft.AspNetCore.Components.Authorization.dll",
+      "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/Microsoft.AspNetCore.Components.Authorization.dll.gz"
+    },
+    {
+      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\DeWROY74wnj8HoF8lkqPPsERwqmjCFq3PI2Cz_OFiRk=.hash",
       "Source": "C:\\Users\\danes\\OneDrive\\Рабочий стол\\Обучение\\Практика\\Практики\\CRM_Blazor\\Client\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\Crm_WASM.Shared.dll",
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/Crm_WASM.Shared.dll.gz"
     },
     {
-      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\aEK1khehzLakvCvsDwQxowfwhp_o0A6iK9Vjllca1_E=.hash",
+      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\4A4tZK5H1JH5ifb4XsYaq9Ms90fJV_xRWSf08R-p6Dg=.hash",
       "Source": "C:\\Users\\danes\\OneDrive\\Рабочий стол\\Обучение\\Практика\\Практики\\CRM_Blazor\\Client\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\Crm_WASM.Client.pdb",
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/Crm_WASM.Client.pdb.gz"
     },
     {
-      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\L5gqP_IgpkZ4wNjvpHnH7QVEAwj5BonkXy-XsLnjE_E=.hash",
+      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\mO8LQQrDgTRCnrJls6E7-IuvZmSDkChmhZV4UaCsrPY=.hash",
       "Source": "C:\\Users\\danes\\OneDrive\\Рабочий стол\\Обучение\\Практика\\Практики\\CRM_Blazor\\Client\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\Crm_WASM.Shared.pdb",
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/Crm_WASM.Shared.pdb.gz"
     },
@@ -296,12 +311,12 @@
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/blazor.webassembly.js.gz"
     },
     {
-      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\SKUa8CAH2GoT-9uJXJiXogHMN0oLjokTsk81252ZzvE=.hash",
+      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\QL7j4tuwRYw6AM6KrBR7Ap9CuynMHwOUGyN3TzsSOtQ=.hash",
       "Source": "C:\\Users\\danes\\OneDrive\\Рабочий стол\\Обучение\\Практика\\Практики\\CRM_Blazor\\Client\\obj\\Debug\\netstandard2.1\\blazor\\blazor.boot.json",
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/blazor.boot.json.gz"
     },
     {
-      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\MU9uHLj0n9RhCybswP0Gpf3VokhVg_YkaH4sldqFUS0=.hash",
+      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\HfnybbAUo9Zmp1nycwQ81AaaP0LeymxnEe8Lk8V4A6Q=.hash",
       "Source": "C:\\Users\\danes\\OneDrive\\Рабочий стол\\Обучение\\Практика\\Практики\\CRM_Blazor\\Client\\obj\\Debug\\netstandard2.1\\blazor\\service-worker-assets.js",
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\service-worker-assets.js.gz"
     }

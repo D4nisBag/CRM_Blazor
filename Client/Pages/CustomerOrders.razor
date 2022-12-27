@@ -1,9 +1,127 @@
 ﻿@page "/customer-orders/{CustomerId:int}"
+@using Crm_WASM.Shared
+@inject HttpClient Http
+@inject NavigationManager NavigationManager
 
-<h3>@CustomerId</h3>
+
+<div class="page-container">
+    
+    @foreach (var item in customers)
+    {
+        if (item.CustomerId == CustomerId)
+        {
+            <h1 class=page-title>
+                Страница заявок пользователя - "@item.Name @item.SurName @item.LastName"
+            </h1>
+            <div class="description">
+                <div class="field-container">
+                <div class="single-field field-name">
+                    id:
+                </div>
+                <div class="single-field field-value">
+                    @item.CustomerId
+                </div>
+            </div>
+            <div class="field-container">
+                <div class="single-field field-name">
+                    Полное имя
+                </div>
+                <div class="single-field field-value">
+                    @item.Name @item.SurName @item.LastName
+                </div>
+            </div>
+            <div class="field-container">
+                <div class="single-field field-name">
+                    Адрес электронной почты:
+                </div>
+                <div class="single-field field-value">
+                    @item.Email
+                </div>
+            </div>
+            <div class="field-container">
+                <div class="single-field field-name">
+                    Номер телефона:
+                </div>
+                <div class="single-field field-value">
+                    @item.PhoneNumber
+                </div>
+            </div>
+            </div>
+            
+        }
+    }
+    <div class="table-container">
+         <table class="table table-stripped my-table">
+            <thead class="table-head">
+                <tr class="rounded">
+                    <th class="lt-rounded" scope="col">
+                        id заявки
+                    </th>
+                    <th scope="col">
+                        Полное имя
+                    </th>
+                    <th scope="col">
+                        Адрес отправления
+                    </th>
+                    <th scope="col">
+                        Адрес прибытия
+                    </th>
+                    <th scope="col">
+                        Общий вес
+                    </th>
+                    <th class="rt-rounded" scope="col">
+                    </th>
+                </tr>
+            </thead>
+            <tbody class="order-body">
+                @foreach (var order in orders)
+                    {
+                        if(order.CustomerId == CustomerId)
+                        {
+                            
+                            <tr style="@StyleForStatus(@order.Status)" class="order-row opened">
+                                <td class="table-shell lb-rounded">
+                                    @order.OrderId
+                                </td>
+                                <td class="table-shell">
+                                    @order.OrderName
+                                </td>
+                                <td class="table-shell">
+                                    @order.DispatchAdress
+                                </td>
+                                <td class="table-shell">
+                                    @order.TargetAdress
+                                </td>
+                                <td class="table-shell">
+                                    @order.Weight
+                                </td>
+                                <td class="rb-rounded">
+                                    <a href="/single-order/@order.OrderId" class="btn order-link">
+                                        Подробнее...
+                                    </a>
+                                </td>
+                            </tr>        
+                        }
+                    }
+            </tbody>
+        </table>      
+    </div>
+</div>
 
 @code {
+    public List<Customer> customers{ get; set; } = new List<Customer>();
+    public List<Order> orders{ get; set; } = new List<Order>();
+    protected override async Task OnInitializedAsync()
+    {
+        customers = await Http.GetFromJsonAsync<List<Customer>>("customer");
+            orders = await Http.GetFromJsonAsync<List<Order>>("order");
+    }
     [Parameter]
     public int CustomerId { get; set; }
-
+    private string StyleForStatus(string status)
+    {
+    if (status == "opened") return "background-color: #b1fac7";
+    if (status == "closed") return "background-color: #f1a4a4;";
+    return "background-color: white";
+    }
 }

@@ -75,6 +75,20 @@ using Crm_WASM.Client.Shared;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 10 "C:\Users\danes\OneDrive\Рабочий стол\Обучение\Практика\Практики\CRM_Blazor\Client\_Imports.razor"
+using Microsoft.AspNetCore.Components.Authorization;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 2 "C:\Users\danes\OneDrive\Рабочий стол\Обучение\Практика\Практики\CRM_Blazor\Client\Pages\CustomerOrders.razor"
+using Crm_WASM.Shared;
+
+#line default
+#line hidden
+#nullable disable
     [global::Microsoft.AspNetCore.Components.RouteAttribute("/customer-orders/{CustomerId:int}")]
     public partial class CustomerOrders : global::Microsoft.AspNetCore.Components.ComponentBase
     {
@@ -84,15 +98,29 @@ using Crm_WASM.Client.Shared;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 5 "C:\Users\danes\OneDrive\Рабочий стол\Обучение\Практика\Практики\CRM_Blazor\Client\Pages\CustomerOrders.razor"
+#line 111 "C:\Users\danes\OneDrive\Рабочий стол\Обучение\Практика\Практики\CRM_Blazor\Client\Pages\CustomerOrders.razor"
        
+    public List<Customer> customers{ get; set; } = new List<Customer>();
+    public List<Order> orders{ get; set; } = new List<Order>();
+    protected override async Task OnInitializedAsync()
+    {
+        customers = await Http.GetFromJsonAsync<List<Customer>>("customer");
+            orders = await Http.GetFromJsonAsync<List<Order>>("order");
+    }
     [Parameter]
     public int CustomerId { get; set; }
-
+    private string StyleForStatus(string status)
+    {
+    if (status == "opened") return "background-color: #b1fac7";
+    if (status == "closed") return "background-color: #f1a4a4;";
+    return "background-color: white";
+    }
 
 #line default
 #line hidden
 #nullable disable
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private NavigationManager NavigationManager { get; set; }
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private HttpClient Http { get; set; }
     }
 }
 #pragma warning restore 1591

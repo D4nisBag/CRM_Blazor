@@ -7,7 +7,7 @@ namespace Crm_WASM.Shared
 
     public class Customer
     {
-        public int CustomerId { get; set; }
+        public long CustomerId { get; set; }
         public string Name { get; set; }
         public string SurName { get; set; }
         public string LastName { get; set; }
@@ -19,7 +19,7 @@ namespace Crm_WASM.Shared
         {
 
         }
-        public Customer(int CustomerId, string Name, string Surname, string LastName, string Email, string PhoneNumber, string Login, string Password)
+        public Customer(long CustomerId, string Name, string Surname, string LastName, string Email, string PhoneNumber, string Login, string Password)
         {
             this.CustomerId = CustomerId;
             this.Name = Name;

@@ -10,7 +10,7 @@ namespace Crm_WASM.Shared.Models
             Orders = new HashSet<Order>();
         }
 
-        public int Id { get; set; }
+        public long Id { get; set; }
         public string Name { get; set; }
         public string Surname { get; set; }
         public string Lastname { get; set; }

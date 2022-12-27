@@ -1,4 +1,9 @@
 ﻿@page "/login"
+@using Crm_WASM.ViewModels
+@using Crm_WASM.Shared.Models
+@inject LoginViewModel _loginViewModel
+@inject NavigationManager _navigationManager
+
 
 <div class="window__container auth__container">
     <div class="window__upper auth__upper">
@@ -10,14 +15,18 @@
         <p class="auth__lower-par">
             Введите данные для доступа к системе.
         </p>
-        <input type="text" class="auth__input" placeholder="E-Mail" />
-        <input type="text" class="auth__input" placeholder="Password" />
-        <button class="auth__login btn">Войти</button>
+        <input type="text" @bind="_loginViewModel.Login" class="auth__input" placeholder="Login" />
+        <input type="password" @bind="_loginViewModel.Password" class="auth__input" placeholder="Password" />
+        <button class="auth__login btn" @onclick="LoginCustomer">Войти</button>
         <p class="auth__register-par">Нет аккаунта?<a href="register" class="auth__press-here">Нажмите сюда</a></p>
     </div>
 </div>
 
 @code {
-
+    public async Task LoginCustomer()
+    {
+        await _loginViewModel.LoginCustomer();
+        _navigationManager.NavigateTo("/profile", true);
+    }
 
 }

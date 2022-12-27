@@ -2,7 +2,9 @@
 @using Crm_WASM.ViewModels
 @inject ProfileViewModel _profileViewModel
 @using Crm_WASM.Shared.Models
-
+@using System.Security.Claims
+@inject AuthenticationStateProvider _authenticationStateProvider
+@inject NavigationManager _navigationManager
 <div class="window__container new-order__container">
     <div class="window__upper">
         <h2 class="auth__title">
@@ -39,7 +41,8 @@
                 Номер телефона
             </label>
             <input @bind-value="_profileViewModel.PhoneNumber" id="phone" type="text" class="new-order__input" placeholder="Номер телефона" />
-        </div>     
+        </div>
+        @* <button @onclick="LoadInfo" class="new-order btn">Получить данные</button>      *@
         <button @onclick="_profileViewModel.UpdateProfile" class="new-order btn">Изменить данные</button>
         <span>&nbsp;</span>
         @_profileViewModel.Message
@@ -52,6 +55,34 @@
 
         protected override async Task OnInitializedAsync()
         {
-            await _profileViewModel.GetProfile();
+            var authState = await _authenticationStateProvider.GetAuthenticationStateAsync();
+            var customer = authState.User;
+
+            if(customer.Identity.IsAuthenticated)
+            {
+                var claim = customer.FindFirst(c => c.Type == ClaimTypes.NameIdentifier);
+                _profileViewModel.Id = Convert.ToInt64(claim?.Value);
+                await _profileViewModel.GetProfile();
+            }
+            else
+            {
+
+            }
         }
+        @* public async Task LoadInfo()
+        {
+            var authState = await _authenticationStateProvider.GetAuthenticationStateAsync();
+            var customer = authState.User;
+
+            if(customer.Identity.IsAuthenticated)
+            {
+                var claim = customer.FindFirst(c => c.Type == ClaimTypes.NameIdentifier);
+                _profileViewModel.Id = Convert.ToInt64(claim?.Value);
+                await _profileViewModel.GetProfile();
+            }
+            else
+            {
+
+            }
+        } *@
 }

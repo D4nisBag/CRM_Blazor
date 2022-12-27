@@ -1,50 +1,82 @@
-﻿<div class="top-row navbar logo-container">
+﻿@inject NavigationManager _navigationManager
+@inject HttpClient _httpClient
+
+<div class="top-row navbar logo-container">
     <div class="container-fluid">
         <a class="crm-link" href="">CRM_Project</a>
         <button title="Navigation menu" class="navbar-toggler" >
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="top-row flex">
-            <NavLink class="nav-link" href="login">
-                Авторизоваться
-            </NavLink>
-            <NavLink class="nav-link" href="register">
-                Зарегистрироваться
-            </NavLink>
+            <AuthorizeView>
+                <Authorized>
+                    <p class="logged-name">
+                    Role: Administrator
+                    </p>
+                    <p class="logged-name">
+                    @context.User.Identity.Name
+                    </p>
+                    <button class="nav-link btn" @onclick="Logout">
+                    Выйти
+                    </button>
+                </Authorized>
+                <NotAuthorized>
+                    <NavLink class="nav-link" href="login">
+                        Авторизоваться
+                    </NavLink>
+                    <NavLink class="nav-link" href="register">
+                        Зарегистрироваться
+                    </NavLink>
+                </NotAuthorized>
+            </AuthorizeView>
+            
+
+            
         </div>
     </div>
 </div>
 
-<div class="nav-scrollable" >
-    <nav class="nav flex-column">
-        <div class="nav-item px-3">
-            <NavLink class="nav-link" href="profile" Match="NavLinkMatch.All">
-                <span class="oi oi-home" aria-hidden="true"></span> Мой профиль
-            </NavLink>
+<AuthorizeView>
+    <Authorized>
+        <div class="nav-scrollable" >
+            <nav class="nav flex-column">
+                <div class="nav-item px-3">
+                    <NavLink class="nav-link" href="profile" Match="NavLinkMatch.All">
+                        <span class="oi oi-home" aria-hidden="true"></span> Мой профиль
+                    </NavLink>
+                </div>
+                <div class="nav-item px-3">
+                    <NavLink class="nav-link" href="order-list">
+                        <span class="oi oi-list-rich" aria-hidden="true"></span> Список заявок
+                    </NavLink>
+                </div>
+                <div class="nav-item px-3">
+                    <NavLink class="nav-link" href="client-list">
+                        <span class="oi oi-list-rich" aria-hidden="true"></span> Список клиентов
+                    </NavLink>
+                </div>
+                <div class="nav-item px-3">
+                    <NavLink class="nav-link" href="my-orders">
+                        <span class="oi oi-list-rich" aria-hidden="true"></span> Мои заявки
+                    </NavLink>
+                </div>
+                <div class="nav-item px-3">
+                    <NavLink class="nav-link" href="new-order">
+                        <span class="oi oi-list-rich" aria-hidden="true"></span> Создать заявку
+                    </NavLink>
+                </div>
+            </nav>
         </div>
-        <div class="nav-item px-3">
-            <NavLink class="nav-link" href="order-list">
-                <span class="oi oi-list-rich" aria-hidden="true"></span> Список заявок
-            </NavLink>
-        </div>
-        <div class="nav-item px-3">
-            <NavLink class="nav-link" href="client-list">
-                <span class="oi oi-list-rich" aria-hidden="true"></span> Список клиентов
-            </NavLink>
-        </div>
-        <div class="nav-item px-3">
-            <NavLink class="nav-link" href="my-orders">
-                <span class="oi oi-list-rich" aria-hidden="true"></span> Мои заявки
-            </NavLink>
-        </div>
-        <div class="nav-item px-3">
-            <NavLink class="nav-link" href="new-order">
-                <span class="oi oi-list-rich" aria-hidden="true"></span> Создать заявку
-            </NavLink>
-        </div>
-    </nav>
-</div>
+    </Authorized>
+    <NotAuthorized>
+    
+    </NotAuthorized>                
+</AuthorizeView>
 
 @code {
-    
+    private async Task Logout()
+    {
+        await _httpClient.GetAsync("customer/logoutcustomer");
+        _navigationManager.NavigateTo("/login", true);
+    }
 }

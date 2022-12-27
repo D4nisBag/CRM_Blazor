@@ -5,7 +5,7 @@ namespace Crm_WASM.Shared.Models
 {
     public partial class Order
     {
-        public int Id { get; set; }
+        public long Id { get; set; }
         public string OrderName { get; set; }
         public string DispatchAdress { get; set; }
         public string TargetAdress { get; set; }
@@ -13,7 +13,7 @@ namespace Crm_WASM.Shared.Models
         public string SendingProduct { get; set; }
         public string Status { get; set; }
         public string Message { get; set; }
-        public int CustomerId { get; set; }
+        public long CustomerId { get; set; }
 
         public virtual Customer Customer { get; set; }
     }
