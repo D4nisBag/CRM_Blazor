@@ -21,7 +21,9 @@
 
 ## Дополнительные ссылки:
 Макет Figma - https://www.figma.com/file/bNU5AqAzYtIbBTIWCh0LVp/Untitled?node-id=11%3A220&t=itEYWIkQTU5jmmdZ-0
+
 ТЗ - https://docs.google.com/document/d/11Ww-Y7HftGWpbmltUG04NhCKCJpe_OKtoM-xGl08amg/edit
+
 Task Manager Asana - https://app.asana.com/0/1203419718278880/1203419718278895 
 
 ## Launch
