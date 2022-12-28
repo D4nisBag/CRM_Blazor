@@ -12,6 +12,7 @@
  - Blazor Server
  
  ## Структура репозитория
+ ![image](https://user-images.githubusercontent.com/92932521/209802488-bf70b473-3c0c-4736-b391-e4a42ebb8369.png)
 
 ```Client``` - Директория, где находится клиентская часть приложения, тут содержатся страницы(Pages), общие компоненты(Shared), такие как меню и сайдбар(NavMenu), css стили(App.css), общие настройки клиентской части(Crm_WASM.Server.csproj), ViewModels, с помощью которых обеспечивается обращение к серверной части через HTTP(ViewModels).
 
@@ -53,7 +54,11 @@ Task Manager Asana - https://app.asana.com/0/1203419718278880/1203419718278895
 ![image](https://user-images.githubusercontent.com/92932521/209726745-937e324a-a70a-42a3-a1ed-6ddeaa24fb44.png)
 Интерфейс страницы регистрации:
 ![image](https://user-images.githubusercontent.com/92932521/209726764-8182e647-e993-4b74-bc74-2870234c46c0.png)
-
+## Database
+Базу данных SQLite можно довольно легко открыть с помощью расширения для Visual Studio Code - "SQLite", кликнув по файлу ```Crm_WASM.db``` правой кнопкой мыши и выбрав ```open database```, после чего база данных будет открыта в нижнем левом углу VS Code:
+![image](https://user-images.githubusercontent.com/92932521/209801917-b4516329-31c6-454b-b24b-505207c0f730.png)
+Затем, к примеру, нажав на ```Show table``` у таблицы ```Customers```, можно увидеть все записи в данной таблице:
+![image](https://user-images.githubusercontent.com/92932521/209802426-be24268f-8ae9-4940-8f99-6f4c495e56d6.png)
 
 
 
