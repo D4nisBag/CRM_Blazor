@@ -56,8 +56,11 @@ Task Manager Asana - https://app.asana.com/0/1203419718278880/1203419718278895
 ![image](https://user-images.githubusercontent.com/92932521/209726764-8182e647-e993-4b74-bc74-2870234c46c0.png)
 ## Database
 Базу данных SQLite можно довольно легко открыть с помощью расширения для Visual Studio Code - "SQLite", кликнув по файлу ```Crm_WASM.db``` правой кнопкой мыши и выбрав ```open database```, после чего база данных будет открыта в нижнем левом углу VS Code:
+
 ![image](https://user-images.githubusercontent.com/92932521/209801917-b4516329-31c6-454b-b24b-505207c0f730.png)
+
 Затем, к примеру, нажав на ```Show table``` у таблицы ```Customers```, можно увидеть все записи в данной таблице:
+
 ![image](https://user-images.githubusercontent.com/92932521/209802426-be24268f-8ae9-4940-8f99-6f4c495e56d6.png)
 
 
